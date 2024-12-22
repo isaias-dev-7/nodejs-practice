@@ -83,3 +83,6 @@ export function delay(time){
 export function envConfig(path = {}){
     config(path);
 }
+
+//=======================================================================
+// ex 6 

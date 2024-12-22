@@ -5,10 +5,15 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-      "dev": "node solutions/index.js",
-      "test": "node test/3.test.js"
+        "dev": "node solutions/index.js",
+        "test": "node test/3.test.js"
     },
     "author": "isaiasosoria@gmail.com",
-    "license": "ISC"
-  }
-  
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "supertest": "^7.0.0"
+    }
+}
