@@ -27,8 +27,6 @@ export function getDataPromise() {
 //     });
 
 // }
-
-// we can use the (import fs from "fs") but we need use then fs.promises.(function)
 export async function proccessFile(){
    let res = await fs.readFile('input.txt','utf8').catch( error => console.log(error.message) );
    if (res) res = res.toUpperCase();
@@ -37,7 +35,6 @@ export async function proccessFile(){
 }
 
 //===================================================================
-
 //ex 3
 export async function files(){
     console.time('file');
