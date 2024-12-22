@@ -1,0 +1,14 @@
+{
+    "name": "mi-proyecto-javascript",
+    "version": "1.0.0",
+    "description": "Descripción del proyecto",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "dev": "node solutions/index.js",
+      "test": "node test/3.test.js"
+    },
+    "author": "isaiasosoria@gmail.com",
+    "license": "ISC"
+  }
+  
