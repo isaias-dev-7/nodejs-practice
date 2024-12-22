@@ -21,7 +21,7 @@ app.get('/items',(req, res) => {
 
 app.get('/items/:id',(req, res) => {
     const { id } = req.params;
-    const item = items.find( item => item.id === id );
+    const item = items.find( item => item.id === Number(id) );
     return res.status(200).json(item);
 });
 
@@ -44,7 +44,7 @@ app.put('/items/:id',( req, res ) => {
 
 app.delete('/items/:id', (req, res) => {
     const { id } = req.params;
-    const index = items.findIndex( item => item.id === id );
+    const index = items.findIndex( item => item.id === Number(id) );
     items.splice(index,1);
     return res.status(200).json();
 });
