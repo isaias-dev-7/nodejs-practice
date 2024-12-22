@@ -1,2 +1,3 @@
-1. run  ``` npm install ```.
-2. run ``` npm run dev ```.
+1. to install dependences run  ``` npm install ``` .
+2. run tests ``` npm run test ```.
+3. run ``` npm run dev ```.

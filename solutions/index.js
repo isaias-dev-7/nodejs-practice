@@ -31,14 +31,12 @@ export async function proccessFile(){
    let res = await fs.readFile('input.txt','utf8').catch( error => console.log(error.message) );
    if (res) res = res.toUpperCase();
    await fs.writeFile('./output.txt', res).catch( error => console.log(error.message) );
-   console.log('proccess end up');
 }
 
 //===================================================================
 //ex 3
 export async function files(){
-    console.time('file');
-    
+
     const [file1, file2, file3] = await Promise.allSettled([
         fs.readFile('./file1.txt','utf8'),
         fs.readFile('./file2.txt','utf8'),
@@ -48,7 +46,6 @@ export async function files(){
     const message = [file1.value, file2.value, file3.value]
     .filter(value => typeof value != 'undefine')
     .join(' ');
-    console.timeEnd('file');
 
     return message; 
 }

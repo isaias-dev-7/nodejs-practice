@@ -9,7 +9,7 @@ describe('files', () => {
         writeFileSync('file1.txt','ok');
         writeFileSync('file2.txt','well');
         writeFileSync('file3.txt','done');
-        console.log(await files())
+
         equal("ok well done", await files());
         
     });
