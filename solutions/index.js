@@ -1,5 +1,5 @@
 import fs from 'fs/promises';
-
+import { config } from "./dotenv.js";
 // Ex #1 
 export function getDataPromise() {
 
@@ -72,11 +72,14 @@ export function delay(time){
     return res;
 }
 
-const { promise, clear } = delay(3000);
-promise.then(()=>{
-    console.log('Hello world');
-    clear();
-});
+// const { promise, clear } = delay(3000);
+// promise.then(()=>{
+//     console.log('Hello world');
+//     clear();
+// });
 
 //=======================================================================
 // ex 5 dotenv
+export function envConfig(path = {}){
+    config(path);
+}

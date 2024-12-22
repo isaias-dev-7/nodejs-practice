@@ -25,4 +25,3 @@ const dotenv = {
 
 export default dotenv;
 
-config({});
